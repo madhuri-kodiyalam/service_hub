@@ -27,7 +27,6 @@ const LoginPage = () => {
   useEffect(() => {
     if (!window.google) {
       const script = document.createElement("script");
-      script.src = `https://maps.googleapis.com/maps/api/js?key=AIzaSyBDW-UQqj8JSJs7AyqR6oTsV1a_xznSTR0&libraries=places`;
       script.async = true;
       script.onload = () => {
         autocompleteService.current =
